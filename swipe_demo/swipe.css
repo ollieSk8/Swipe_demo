@@ -1,0 +1,15 @@
+
+*{margin:0px;padding:0px;}
+html{width:100%;height:100%;overflow:hidden;}
+body{width:100%;height:100%;position:relative;}
+.container{width:100%;height:100%;position: absolute;left:0px;top:0px;
+/*开启手机硬件加速*/
+-webkit-backface-visibility: hidden;
+-webkit-transform-style:preserve-3d; 
+}
+.main_page{width:100%;height:100%;
+}
+.blue{background-color:blue;}
+.red{background-color:red;}
+.yellow{background-color:yellow;}
+.gray{background-color:#ccc;}
