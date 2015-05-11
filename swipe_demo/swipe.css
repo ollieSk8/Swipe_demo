@@ -1,15 +1,85 @@
-
+/*
+© 2015 create by liu shichen all right serves
+*/
 *{margin:0px;padding:0px;}
 html{width:100%;height:100%;overflow:hidden;}
-body{width:100%;height:100%;position:relative;}
-.container{width:100%;height:100%;position: absolute;left:0px;top:0px;
+body{width:100%;height:100%;position:relative;
+font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+body - "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+font-size:12px;}
+.container{width:100%;height:100%;position:relative;}
+.music_btn{
+	width:44px;
+	height:44px;
+	position: absolute;
+	right:10px;
+	top:10px;
+	z-index:100;
+	background:url(http://www.qiyipic.com/zhuanti/fix/music_off.png) no-repeat;
+}
+.rotate{
+	-webkit-animation:rotating 1.2s linear infinite;
+	-webkit-transform-origin:center center;
+}
+.main_page{width:100%;
 /*开启手机硬件加速*/
 -webkit-backface-visibility: hidden;
--webkit-transform-style:preserve-3d; 
+-webkit-transform-style:preserve-3d;
+position:absolute;
+z-index:0;
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+-webkit-transform-origin:center top;
+background-color:#f2f2f2;
+padding:10px 20px;
+-webkit-box-sizing:border-box;
+border-top:1px solid #fff;
+border-bottom:1px solid #fff;
 }
-.main_page{width:100%;height:100%;
+.main_page p{
+	width:100%;
+	display:inline-block;
+	font-size:2em;
+	text-align: center;
+	padding-top:3em;
 }
-.blue{background-color:blue;}
-.red{background-color:red;}
-.yellow{background-color:yellow;}
-.gray{background-color:#ccc;}
+.main_page img{
+	width:100%;
+	height:auto;
+}
+.black{background:#000;}
+.main_page .arrow{
+	  position: absolute;
+	  bottom: 10px;
+	  left: 50%;
+	  z-index: 150;
+	  width:50px;
+	  height:29px;
+	  margin-left: -25px;
+	  display: block;
+	  background:url(http://www.qiyipic.com/zhuanti/fix/btn01_arrow.png) no-repeat;
+	  -webkit-animation:start 1.5s infinite ease-in-out;
+}
+@-webkit-keyframes start {
+	0%,30% {
+	opacity: 0;
+	-webkit-transform: translate(0,10px)
+	}
+60% {
+	opacity: 1;
+	-webkit-transform: translate(0,0)
+	}
+100% {
+	opacity: 0;
+	-webkit-transform: translate(0,-8px)
+	}
+}
+@-webkit-keyframes rotating {
+	from {
+	-webkit-transform: rotate(0deg)
+	}
+    to{
+	-webkit-transform: rotate(360deg)
+	}
+}

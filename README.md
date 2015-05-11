@@ -1,2 +1,5 @@
 #Swipe_demo
-移动端CSS3 翻页简单DEMO
+##移动端翻页DEMO
+> 1. index.html 为主页文件
+> 2. swipe.css 为样式文件
+> 3. swipe.js 为js文件
